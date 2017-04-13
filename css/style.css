@@ -11,7 +11,7 @@ h1 {
     text-align: center;
 }
 
-#cont {
+.container h1 {
 /*    color: #fffff0;*/
     font-size: 40px;
 }
@@ -20,11 +20,19 @@ h1 {
     width: 600px;
     height: 600px;
     margin: auto;
-    background-image: url("/images/space_bg.gif");
     border: 2px dotted #2b3b63;
 }
 
 #screen {
+    background-image: url("/images/space_bg.gif");
+}
+
+#screen2 {
+    background-image: url("/images/warp_speed.gif");
+    background-size: cover;
+}
+
+#title {
 /*    color: #fffff0; */
     font-size: 90px;
     margin-top: 20%;
@@ -62,4 +70,28 @@ article {
     font-size: 25px;
     text-align: left;
     border-radius: 25px;
+}
+
+.off {
+    display: none;
+}
+
+.bubble {
+position: relative;
+top: 20px;
+left: 20px;
+width: 50px;
+height: 50px;
+animation: ball 15s infinite;
+}
+
+@keyframes ball {
+    0% {background: red;
+        left: 0px; top: 20px;}
+    33% {position: absolute;
+        top: 570px; left: 570px;}
+    67% {position: absolute;
+        top: 70px; left: 570px;}
+    100% {background: red;
+        left: 0px; top: 20px;}
 }
