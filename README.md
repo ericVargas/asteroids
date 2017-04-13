@@ -1,14 +1,18 @@
-# Asteroid Space Shooter
+# Asteroids in Space!
 
-Presented on the bottom of the screen, there will be a space ship gliding left and right following the x-axis of the mouse while infintely moving forward. The ship will be traveling across an astreroid field! Using the mouse click to destroy any oncoming obstacles, as the levels progress the health of the obstacles will be more. The game will end when the ship is destroied.
+Your ship will be traveling across an astreroid field!
+Using the mouse click to destroy any oncoming obstacles. As the levels progress, more asteroids will appear! 
+Clear the path before the time runs out!
 
 ### Guide through my thinking:
-- _**Landing page:**_ First the player will be presented by a title page with 2 options of game play: Normal or Hard.
+- _**Landing page:**_ First the player will be presented by a title page with a How To and Start buttons.
 
-- _**Initialization:**_ The ship will be following the mouses' x-axis coordinate along bottom of screen. The background will have the illusion of warp speed traveling.
+- _**Initialization:**_ The player will then be brought to a different screen where asteroids will appear randomly. The background will have the illusion of warp speed traveling.
  
-- _**Game play:**_ Having to 'shoot' with the mouse to destory the rocks in the path of your ship. If the rocks touch the ship, it's health will decrease. As the player progresses through the levels, the game will get more dificult.
+- _**Game play:**_ Having to destory the rocks in the screen with your mouse. There will be a timer for how long the rocks will need to be cleared. As the player progresses through the levels, the game will get more dificult as more asteroids appear.
 
-- _**Win condition:**_ The goal would be how far can the player get before completly destroying their ship (What it the highest level you can reach?).
+- _**Win condition:**_  If any rocks are still on the screen when the timer runs out, the game is over. The goal is to see what is the highest level you can reach.
  
-- _**Reset:**_ When the ship gets destroied, it will blow up and form the message GAME OVER from the "cloud". Will then load back up to the title screen.
+- _**Reset:**_ When you don't complete a level, the screen will "blow up" and form the message GAME OVER from its "cloud". The screen will then transition over to a Play Again screen, which will display the highest level reached and a play again button.
+
+## Follow my progress: [Trello - Asteroids](https://trello.com/b/sacmqOpJ/asteroids)
