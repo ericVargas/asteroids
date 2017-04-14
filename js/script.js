@@ -11,6 +11,7 @@ function howToPlay() {
     document.getElementById('title').style.margin= '40px 0px 20px 0px';
 };
 
+
 let startB = document.getElementById('buttonStart');
 let title = document.getElementById('titleP');
 
@@ -20,7 +21,52 @@ function startGame() {
     console.log('Start the game!');
     document.getElementById('screen').id = 'screen2';
     title.setAttribute('class', 'off');
-    let bubble = document.createElement('div');
-    bubble.setAttribute('class', 'bubble');
-    screen2.appendChild(bubble);
+//    let bubble = document.createElement('div');
+//    bubble.setAttribute('class', 'bubble');
+//    screen2.appendChild(bubble);
+//};
+
+    class Bubblemaker {
+       constructor(num) {
+           this.lvl = [];
+       }
+
+       getBubbles(num) {
+           for (let i = 0; i < num; i ++) {
+               this.lvl.push(i);
+           }
+       }
+
+        printBubbles() {
+            console.log('print');
+             for(let i = 0; i < this.lvl.length; i ++){
+            let bubble = document.createElement('div');
+            bubble.setAttribute('class', 'bubble')
+            screen2.appendChild(bubble);
+             }
+        }
+    }
+    
+    let gameplay= new Bubblemaker();
+    gameplay.getBubbles(3);
+    gameplay.printBubbles();
+    
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    getLevel(num) {
+//        console.log('get level');
+//        let newLvl = lvl * num;
+//    }
+//}

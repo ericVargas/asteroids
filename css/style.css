@@ -2,6 +2,7 @@
     width: 100%;
     height: 960px;
     background: #141929;
+    padding-bottom: 30px;
 }
 
 h1 {
@@ -24,11 +25,12 @@ h1 {
 }
 
 #screen {
-    background-image: url("../images/space_bg.gif");
+    background-image: url("../images/space.gif");
 }
 
 #screen2 {
-    background-image: url("../images/warp_speed.gif");
+/*    background: #00ff00;*/
+    background-image: url("../images/warp.gif");
     background-size: cover;
 }
 
@@ -77,21 +79,26 @@ article {
 }
 
 .bubble {
-position: relative;
-top: 20px;
-left: 20px;
-width: 50px;
-height: 50px;
-animation: ball 15s infinite;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background-image: url("../images/brown.jpg");
+    border: 3px dotted #a08570;
+    border-radius: 40%;
+    animation: ball 5s infinite;
 }
 
 @keyframes ball {
-    0% {background: red;
-        left: 0px; top: 20px;}
-    33% {position: absolute;
-        top: 570px; left: 570px;}
-    67% {position: absolute;
-        top: 70px; left: 570px;}
-    100% {background: red;
-        left: 0px; top: 20px;}
+    0%, 100% {left: 30px; top: 30px;}
+    33% {top: 500px; left: 500px;}
+    67% {top: 50px; left: 500px;}
+}
+
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
+    .conatiner {
+        margin: auto 0px;
+    }
 }
