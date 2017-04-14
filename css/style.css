@@ -24,11 +24,11 @@ h1 {
 }
 
 #screen {
-    background-image: url("/images/space_bg.gif");
+    background-image: url("asteroids/images/space_bg.gif");
 }
 
 #screen2 {
-    background-image: url("/images/warp_speed.gif");
+    background-image: url("asteroids/images/warp_speed.gif");
     background-size: cover;
 }
 
