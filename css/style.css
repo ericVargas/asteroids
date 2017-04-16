@@ -79,7 +79,7 @@ article {
     display: none;
 }
 
-.bubble {
+.rock {
     position: relative;
     top: 20px;
     left: 20px;
@@ -90,7 +90,7 @@ article {
 /*    border: 3px dotted #463527; #a08570;*/
     border-radius: 50%;
     box-shadow: inset -5px -5px 5px rgba(0,0,0,.6);
-    animation: drift 5s infinite, spin .3s infinite;
+    animation: drift 5s infinite, spin 2s infinite;
 }
   
 @keyframes drift {
@@ -112,6 +112,16 @@ article {
     left:0px;
 }
 
+/*
+    animation: fade 3s linear;
+}
+
+@keyframes fade {
+    0% {opacity: 100%;}
+    100% {opacity: 0%;}
+}
+*/
+
 .explosion {
     width: 500px;
     height: 360px;
@@ -120,7 +130,7 @@ article {
     top: 120px;
     left: 50px;
 }
- 
+
 .over {
     width: 450px;
     height: 100px;

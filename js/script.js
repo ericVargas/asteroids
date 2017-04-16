@@ -22,9 +22,9 @@ function startGame() {
     document.getElementById('screen').id = 'screen2';
     title.setAttribute('class', 'off');
 
-    let play = new Bubblemaker();
-    play.getBubbles(1);
-    play.printBubbles();
+    let play = new Rockbuilder();
+    play.getRocks(1);
+    play.printRocks();
 }
 
 
