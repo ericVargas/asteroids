@@ -22,6 +22,7 @@ h1 {
     height: 600px;
     margin: auto;
     border: 2px dotted #2b3b63;
+    cursor: crosshair;
 }
 
 #screen {
@@ -29,7 +30,7 @@ h1 {
 }
 
 #screen2 {
-/*    background: #00ff00;*/
+/*    background: #ffffff;*/
     background-image: url("../images/warp.gif");
     background-size: cover;
 }
@@ -82,23 +83,61 @@ article {
     position: relative;
     top: 20px;
     left: 20px;
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
+    margin: 5px;
     background-image: url("../images/brown.jpg");
-    border: 3px dotted #a08570;
-    border-radius: 40%;
-    animation: ball 5s infinite;
+/*    border: 3px dotted #463527; #a08570;*/
+    border-radius: 50%;
+    box-shadow: inset -5px -5px 5px rgba(0,0,0,.6);
+    animation: drift 5s infinite, spin .3s infinite;
 }
-
-@keyframes ball {
+  
+@keyframes drift {
     0%, 100% {left: 30px; top: 30px;}
     33% {top: 500px; left: 500px;}
     67% {top: 50px; left: 500px;}
 }
 
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
 
+#gameover {
+    position:relative;
+    width: 600px;
+    height: 600px;
+    top:0px;
+    left:0px;
+}
+
+.explosion {
+    width: 500px;
+    height: 360px;
+    background: url('../images/explosion.gif');
+    position: absolute;
+    top: 120px;
+    left: 50px;
+}
+ 
+.over {
+    width: 450px;
+    height: 100px;
+    background: url('../images/gameover.gif');
+    background-size: cover;
+    position: absolute;
+    top: 250px;
+    left: 75px;
+}
+
+
+
+
+/*
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
     .conatiner {
         margin: auto 0px;
     }
 }
+*/

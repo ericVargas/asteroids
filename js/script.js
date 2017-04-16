@@ -21,47 +21,36 @@ function startGame() {
     console.log('Start the game!');
     document.getElementById('screen').id = 'screen2';
     title.setAttribute('class', 'off');
-//    let bubble = document.createElement('div');
-//    bubble.setAttribute('class', 'bubble');
-//    screen2.appendChild(bubble);
+
+    let play = new Bubblemaker();
+    play.getBubbles(1);
+    play.printBubbles();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//if (screen2.childNodes[0] === true){
+//    gameOver();
+//} else if (screen2.childNodes[0] ===false) {
+//    nextLevel();
+//} else {
+//    return undefined;
 //};
-
-    class Bubblemaker {
-       constructor(num) {
-           this.lvl = [];
-       }
-
-       getBubbles(num) {
-           for (let i = 0; i < num; i ++) {
-               this.lvl.push(i);
-           }
-       }
-
-        printBubbles() {
-            console.log('print');
-             for(let i = 0; i < this.lvl.length; i ++){
-            let bubble = document.createElement('div');
-            bubble.setAttribute('class', 'bubble')
-            screen2.appendChild(bubble);
-             }
-        }
-    }
-    
-    let gameplay= new Bubblemaker();
-    gameplay.getBubbles(3);
-    gameplay.printBubbles();
-    
-};
-
-
-
-
-
-
-
-
-
-
 
 
 
